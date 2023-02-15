@@ -213,7 +213,37 @@ Then any remaining arguments are assumed to belongs to vals.
 
 </h3>
 
+<h3> <i> <li> 2 . The varargs parameter must be last. </li></i></h3>
 
+<h3 align=left>
+	
+```Syntax
+
+int doIt(int a, int b, double c,  int ... vals, boolean stopFlag){
+	
+//Error
+	
+}
+	
+```
+</h3>
+	
+<h3> <i> <li> 3 . There must be only one varargs parameter. </li></i></h3>
+
+<h3 align=left>
+	
+```Syntax
+
+int doIt(int a, int b, double c,  int ... vals, double ...morevals){
+	
+//Error
+	
+}
+	
+Attempt to declare the second varargs parameter is illegal.
+	
+```
+</h3>
 
 
 </ul>
