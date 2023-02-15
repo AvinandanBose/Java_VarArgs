@@ -146,3 +146,17 @@ Similarly ,
 
 
 <h1 align="Center"> VarArgs </h1>
+<h3> Java introduced a <i>Three Peroid Operator (...) </i> to specify variable length argument . </h3>
+<h3> Note now the way that <i>vaTest</i> is written is : </h3>
+<ul>
+
+<h3 align=left>
+	
+```Syntax
+
+static void vaTest(int ...v){}
+	
+```
+
+</h3>
+</ul>
