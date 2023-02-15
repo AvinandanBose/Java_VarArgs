@@ -316,6 +316,27 @@ static void vaTest(boolean ...v) {}
 
 <h3>2 . Second Type</h3>
 
+<h3 align="Left">
+
+```Syntax
+
+class varargs4 {
+
+static void vaTest(int... v) { }
+static void vaTest(int i, int ...v) {}
+
+public static void main(String args[]) {
+        vaTest(1);
+        
+    }
+
+}
+
+```
+</h3>
+
+<h3> Although the parameter list of vaTest() differ, there is no way for the compiler to resolve the following call: vaTest(1). Hence compiler again fails to translate the method call and make a choice between void vaTest(int... v) and vaTest(int i, int ...v), to put the call according to method signature for operation. Thus the situation is ambiguous .</h3>
+
 
 </ul>
 
