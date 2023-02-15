@@ -282,4 +282,40 @@ Attempt to declare the second varargs parameter is illegal.
 
 <h1> </h1>
 <h1 align="Center">  Vararg and Ambiguity </h1>
+<ul>
+<h3>Unexpected errors can result when overloading a method that takes a variable length argument. These errors involve ambiguity(Compiler unable to understand the "overloaded method" at which  the method call will be put. ). </h3>
+
+<h3>1. First Type </h3>
+
+<h3 align="Left">
+
+```Syntax
+
+class VarArgs4{
+
+static void vaTest(int ...v){}
+
+static void vaTest(boolean ...v) {}
+
+ public static void main(String args[]) {
+ 
+ vaTest{1,2,3}; //OK
+ 
+ vaTest{true,false,false}; //OK
+ 
+ vaTest();  // Error : Ambiguous
+ 
+ }
+
+}
+
+```
+</h3>
+
+<h3> For, vaTest() → compiler unable to identify to put the method call <i>" vaTest() "</i>  to the "overloaded methods" : <i>" vaTest(int ...v) "</i> and  <i>" vaTest(boolean ...v) "</i>. As it is valid for both . Hence causes <i>"Ambiguity"</i> . </h3>
+
+<h3>2 . Second Type</h3>
+
+
+</ul>
 
