@@ -263,6 +263,8 @@ Attempt to declare the second varargs parameter is illegal.
  static void vaTest(boolean ... v) {}
  
  static void vaTest(String msg, int ... v) {}
+ 
+ static void vaTest(Float i, int... v) {}
 
 ```
 </h3>
@@ -272,7 +274,7 @@ Attempt to declare the second varargs parameter is illegal.
 <ul>
 <h3> <i> <li> 1. First the types of its vararg parameter can differ . This is the case for vaTest(int..) and vaTest(boolean...). ` ...`  "The Triple Period Operator" causes the parameter to be treated as an array of the specified type.  As we can overload methods by using different of array parameters , here also we can overload vararg methods by using different types of varargs . In this case , Java uses the type difference to determine which overloaded method to call.</li></i></h3>
 
-<h3> <i> <li> 2. The second way to overload a varargs method is to add one or more normal parameters. This is what was done with vaTest(String, int...). In this case, Java uses both the number of arguments and the type of the arguments to determine which method to call.</li></i></h3>
+<h3> <i> <li> 2. The second way to overload a varargs method is to add one or more normal parameters. This is what was done with vaTest(String, int...), vaTest(Float , int... ). In this case, Java uses both the number of arguments and the type of the arguments to determine which method to call.</li></i></h3>
 
 
 </ul>
