@@ -280,5 +280,6 @@ Attempt to declare the second varargs parameter is illegal.
 </ul>
 </ul>
 
+<h1> </h1>
 <h1 align="Center">  Vararg and Ambiguity </h1>
 
