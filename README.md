@@ -205,6 +205,9 @@ vaTest(); // no args
 ```Syntax
 
 int doIt(int a, int b, double c,  int ... vals){}
+
+Here first three arguments are matched according to their types.
+Then any remaining arguments are assumed to belongs to vals.
 	
 ```
 
