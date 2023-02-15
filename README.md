@@ -249,4 +249,32 @@ Attempt to declare the second varargs parameter is illegal.
 </ul>
 
 <h1 align="Center"> Overloading Vararg Methods </h1>
+<ul>
+<h3> <i> We can overload a method that takes a variable-length argument. </i></h3>
+
+<h3> <a href="https://github.com/AvinandanBose/Java_VarArgs/blob/main/varargs3.java"> Example -2 </h3>
+
+<h3 align="Center">
+
+```Syntax
+
+ static void vaTest(int ... v) {}
+ 
+ static void vaTest(boolean ... v) {}
+ 
+ static void vaTest(String msg, int ... v) {}
+
+```
+</h3>
+
+<h3> <i> The above  program illustrates both ways that a varargs method can be overloaded .There are two types :</i> </h3>
+
+<ul>
+<h3> <i> <li> 1. First the types of its vararg parameter can differ . This is the case for vaTest(int..) and vaTest(boolean...). And as,  ...  "The Triple Period Operator" causes the parameter to be treated as an array of the specified type.  As we can overload methods by using different of array parameters , here also we can overload vararg methods by using different types of varargs . In this case , Java uses the type difference to determine which overloaded method to call.</li></i></h3>
+
+<h3> <i> <li> 2. The second way to overload a varargs method is to add one or more normal parameters. This is what was done with vaTest(String, int...). In this case, Java uses both the number of arguments and the type of the arguments to determine which method to call.</li></i></h3>
+
+
+</ul>
+</ul>
 
