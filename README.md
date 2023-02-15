@@ -159,4 +159,39 @@ static void vaTest(int ...v){}
 ```
 
 </h3>
+
+<h3> <a href="https://github.com/AvinandanBose/Java_VarArgs/blob/main/varargs1.java"> Demonstration of VarArgs In Java </h3>
+
+<h3 align=left>
+	
+```Syntax
+
+static void vaTest(int... v) {
+
+System.out.print("Number of args: " + v.length + " Contents: ");
+
+        for (int x : v){
+            System.out.print(x + " ");
+        }
+        //OR
+
+        // for (int i = 0; i < v.length; i++) {
+        //     System.out.print(v[i] + " ");
+        // }
+
+        System.out.println();
+}
+
+public static void main(String args[]){
+
+vaTest(10);  //1 args
+vaTest(1,12,3); // 3 args 
+vaTest(); // no args
+}
+	
+```
+
+</h3>
+
+
 </ul>
