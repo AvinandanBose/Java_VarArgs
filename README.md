@@ -196,4 +196,21 @@ vaTest(); // no args
 <h3> <i><ins>Explanation:</ins></i> Here <i> vaTest() </i> is the function , where <i> v</i> is an array. The ... syntax simply tells the compiler that a variable number of argument will be used ,  and that these arguments will be stored in the array by <i>v</i> . Secondly, in main() function, vaTest() is called with different numbers of arguments, including no arguments at all. The arguments are automatically put in an array and passed to <i>v</i>. In case of no arguments, the length of the array is zero. </h3>
 
 
+<h3> <i> <li> 1 . A method can have "normal" parameters along  wiht a variable-length parameter. However the variable-length parameter must be declared by the method. </li></i></h3>
+
+<h3> <a href="https://github.com/AvinandanBose/Java_VarArgs/blob/main/varargs2.java"> Example -1 </h3>
+
+<h3 align=left>
+	
+```Syntax
+
+int doIt(int a, int b, double c,  int ... vals){}
+	
+```
+
+</h3>
+
+
+
+
 </ul>
