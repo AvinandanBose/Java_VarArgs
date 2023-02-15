@@ -1,5 +1,8 @@
 # Java_VarArgs
 
+
+<h1 align="Center"> Introduction </h1>
+
 <h3>Beginning with JDK 5 , Java has included a feature that simplifies the creation of methods that need to take variable number of arguments. This feature is called <i>varargs</i> and it is short for <i>variable-length arguments.</i> A method that takes a variable number of arguments is called a variable-arity method , or simply a varargs methods .</h3> 
 
 
@@ -133,5 +136,13 @@ Similarly ,
 ```
 </h3>
 
+<h3> <i></ins>Note</ins> There are two problems :</i></h3>
+<ul>
+<h3> <li>1. It is tedious to construct an array each time vaTest() is called. </li></h3>
+<h3> <li>2. It is potentially error prone.</li></h3>
 </ul>
 </ul>
+</ul>
+
+
+<h1 align="Center"> VarArgs </h1>
